@@ -7,7 +7,7 @@ info=document.querySelector('.info');
 sendButton.addEventListener('click',sendMessage);
 
 function sendMessage(){
-    const message=userInput.ariaValueMax.trim();
+    const message=userInput.value.trim();
     
     if(message===''){
         return
@@ -40,7 +40,7 @@ function appendMessage(sender,message){
 
     if(sender=='user'){
         icon.classList.add('fa-regular','fa-user');
-        iconElement.setAttribute('id','user-cion');
+        iconElement.setAttribute('id','user-icon');
     }
     else{
         icon.classList.add('fa-solid','fa-robot');
